@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>D:/DataSet/Mask_dataset/YOLO/images/train\</folder>
+	<filename>train_135.jpg</filename>
+	<source>
+		<database>not important</database>
+		<annotation>not important</annotation>
+		<image>not important</image>
+		<flickrid>not important</flickrid>
+	</source>
+	<owner>
+		<flickrid>not important</flickrid>
+		<name>WHO</name>
+	</owner>
+	<size>
+		<width>440</width>
+		<height>247</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>face</name>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>169</xmin>
+			<ymin>102</ymin>
+			<xmax>196</xmax>
+			<ymax>139</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>mask</name>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>251</xmin>
+			<ymin>115</ymin>
+			<xmax>286</xmax>
+			<ymax>145</ymax>
+		</bndbox>
+	</object>
+</annotation>

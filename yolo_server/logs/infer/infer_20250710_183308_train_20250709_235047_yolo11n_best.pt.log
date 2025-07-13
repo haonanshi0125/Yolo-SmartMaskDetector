@@ -1,0 +1,70 @@
+2025-07-10 18:33:08,146 - root - INFO : ====================日志记录器开始初始化====================
+2025-07-10 18:33:08,147 - root - INFO : 日志记录器最低记录级别: INFO
+2025-07-10 18:33:08,147 - root - INFO : ====================日志记录器初始化完成====================
+2025-07-10 18:33:08,147 - utils.config_utils - INFO : 开始加载配置文件: D:\PycharmProjects\SafeYolo\yolo_server\configs\infer.yaml
+2025-07-10 18:33:08,151 - utils.config_utils - INFO : 配置文件加载成功: D:\PycharmProjects\SafeYolo\yolo_server\configs\infer.yaml
+2025-07-10 18:33:08,153 - utils.beautify - INFO : OrderedDict({'人脸': (117, 20), '口罩': (117, 20), 'face': (118, 17), 'mask': (127, 17)})
+2025-07-10 18:33:08,183 - comtypes.client._code_cache - INFO : Imported existing <module 'comtypes.gen' from 'C:\\Users\\asus\\anaconda3\\envs\\YOLO\\Lib\\site-packages\\comtypes\\gen\\__init__.py'>
+2025-07-10 18:33:08,183 - comtypes.client._code_cache - INFO : Using writeable comtypes cache directory: 'C:\Users\asus\anaconda3\envs\YOLO\Lib\site-packages\comtypes\gen'
+2025-07-10 18:33:08,273 - utils.config_utils - INFO : ====================开始记录模型参数信息====================
+2025-07-10 18:33:08,273 - utils.config_utils - INFO : ----------------------------------------
+2025-07-10 18:33:08,273 - utils.config_utils - INFO : source              : 0 (来源: 命令行)
+2025-07-10 18:33:08,273 - utils.config_utils - INFO : device              : cpu (来源: Yaml)
+2025-07-10 18:33:08,273 - utils.config_utils - INFO : imgsz               : 640 (来源: Yaml)
+2025-07-10 18:33:08,273 - utils.config_utils - INFO : batch               : 1 (来源: Yaml)
+2025-07-10 18:33:08,273 - utils.config_utils - INFO : conf                : 0.25 (来源: 命令行)
+2025-07-10 18:33:08,273 - utils.config_utils - INFO : iou                 : 0.45 (来源: 命令行)
+2025-07-10 18:33:08,273 - utils.config_utils - INFO : max_det             : 300 (来源: Yaml)
+2025-07-10 18:33:08,273 - utils.config_utils - INFO : classes             : None (来源: Yaml)
+2025-07-10 18:33:08,273 - utils.config_utils - INFO : agnostic_nms        : False (来源: Yaml)
+2025-07-10 18:33:08,273 - utils.config_utils - INFO : augment             : False (来源: Yaml)
+2025-07-10 18:33:08,273 - utils.config_utils - INFO : half                : False (来源: Yaml)
+2025-07-10 18:33:08,274 - utils.config_utils - INFO : stream_buffer       : False (来源: Yaml)
+2025-07-10 18:33:08,274 - utils.config_utils - INFO : vid_stride          : 1 (来源: Yaml)
+2025-07-10 18:33:08,274 - utils.config_utils - INFO : retina_masks        : False (来源: Yaml)
+2025-07-10 18:33:08,274 - utils.config_utils - INFO : project             : D:\PycharmProjects\SafeYolo\yolo_server\runs\infer (来源: Yaml)
+2025-07-10 18:33:08,274 - utils.config_utils - INFO : name                : predict (来源: Yaml)
+2025-07-10 18:33:08,274 - utils.config_utils - INFO : save                : True (来源: 命令行)
+2025-07-10 18:33:08,274 - utils.config_utils - INFO : save_frames         : True (来源: 命令行)
+2025-07-10 18:33:08,274 - utils.config_utils - INFO : save_txt            : True (来源: 命令行)
+2025-07-10 18:33:08,274 - utils.config_utils - INFO : save_conf           : True (来源: 命令行)
+2025-07-10 18:33:08,274 - utils.config_utils - INFO : save_crop           : True (来源: 命令行)
+2025-07-10 18:33:08,274 - utils.config_utils - INFO : stream              : False (来源: Yaml)
+2025-07-10 18:33:08,274 - utils.config_utils - INFO : show                : True (来源: 命令行)
+2025-07-10 18:33:08,274 - utils.config_utils - INFO : show_labels         : True (来源: Yaml)
+2025-07-10 18:33:08,274 - utils.config_utils - INFO : show_conf           : True (来源: Yaml)
+2025-07-10 18:33:08,274 - utils.config_utils - INFO : show_boxes          : True (来源: Yaml)
+2025-07-10 18:33:08,274 - utils.config_utils - INFO : line_width          : 4 (来源: 命令行)
+2025-07-10 18:33:08,274 - utils.config_utils - INFO : visualize           : False (来源: Yaml)
+2025-07-10 18:33:08,274 - utils.config_utils - INFO : verbose             : True (来源: Yaml)
+2025-07-10 18:33:08,274 - utils.config_utils - INFO : beautify_settings   : {'beautify': True, 'font_path': 'D:/PycharmProjects/SafeYolo/yolo_server/utils/LXGWWenKai-Bold.ttf', 'base_font_size': 22, 'base_line_width': 4, 'base_label_padding_x': 30, 'base_label_padding_y': 18, 'base_radius': 8, 'text_color_bgr': [0, 0, 0], 'use_chinese_mapping': True, 'label_mapping': {'face': '人脸', 'mask': '口罩'}, 'color_mapping': {'face': [255, 0, 0], 'mask': [0, 255, 0]}} (来源: Yaml)
+2025-07-10 18:33:08,274 - utils.config_utils - INFO : model               : train_20250709_235047_yolo11n_best.pt (来源: 命令行)
+2025-07-10 18:33:08,274 - utils.config_utils - INFO : display_size        : 720 (来源: 命令行)
+2025-07-10 18:33:08,274 - utils.config_utils - INFO : beautify            : True (来源: 命令行)
+2025-07-10 18:33:08,275 - utils.config_utils - INFO : use_chinese_mapping : True (来源: 命令行)
+2025-07-10 18:33:08,275 - utils.config_utils - INFO : font_size           : 22 (来源: 命令行)
+2025-07-10 18:33:08,275 - utils.config_utils - INFO : label_padding_x     : 5 (来源: 命令行)
+2025-07-10 18:33:08,275 - utils.config_utils - INFO : label_padding_y     : 5 (来源: 命令行)
+2025-07-10 18:33:08,275 - utils.config_utils - INFO : radius              : 4 (来源: 命令行)
+2025-07-10 18:33:08,275 - utils.config_utils - INFO : tts_enable          : True (来源: 命令行)
+2025-07-10 18:33:08,275 - utils.config_utils - INFO : tts_duration        : 5 (来源: 命令行)
+2025-07-10 18:33:08,275 - utils.config_utils - INFO : tts_interval        : 5 (来源: 命令行)
+2025-07-10 18:33:08,275 - utils.config_utils - INFO : tts_text_cn         : 请规范佩戴口罩！！！ (来源: 命令行)
+2025-07-10 18:33:08,275 - utils.config_utils - INFO : tts_text_en         : Please wear your mask properly!!! (来源: 命令行)
+2025-07-10 18:33:08,552 - root - INFO : 模型加载成功: D:\PycharmProjects\SafeYolo\yolo_server\models\checkpoints\train_20250709_235047_yolo11n_best.pt
+2025-07-10 18:33:10,481 - root - INFO : Namespace(source='0', device='cpu', imgsz=640, batch=1, conf=0.25, iou=0.45, max_det=300, classes=None, agnostic_nms=False, augment=False, half=False, stream_buffer=False, vid_stride=1, retina_masks=False, project='D:\\PycharmProjects\\SafeYolo\\yolo_server\\runs\\infer', name='predict', save=False, save_frames=True, save_txt=True, save_conf=True, save_crop=True, stream=True, show=False, show_labels=True, show_conf=True, show_boxes=True, line_width=4, visualize=False, verbose=True)
+2025-07-10 18:33:14,048 - root - INFO : 此次推理结果保存路径: D:\PycharmProjects\SafeYolo\yolo_server\runs\infer\predict
+2025-07-10 18:33:14,048 - root - INFO : 保存帧图像路径: D:\PycharmProjects\SafeYolo\yolo_server\runs\infer\predict\0_frames
+2025-07-10 18:33:14,061 - root - INFO : 保存视频路径: D:\PycharmProjects\SafeYolo\yolo_server\runs\infer\predict\output.mp4
+2025-07-10 18:33:14,061 - root - INFO : 视频写入器创建成功
+2025-07-10 18:33:14,061 - utils.tts_utils - INFO : 检测到未戴口罩,开始计时: 1752143594.061832
+2025-07-10 18:33:19,119 - utils.tts_utils - INFO : 未戴口罩时间超过阈值(5秒),触发语音提醒
+2025-07-10 18:33:21,980 - utils.tts_utils - INFO : 语音提醒完成: 请规范佩戴口罩！！！ | Please wear your mask properly!!!
+2025-07-10 18:33:24,194 - utils.tts_utils - INFO : 检测到未戴口罩,开始计时: 1752143604.194012
+2025-07-10 18:33:29,198 - utils.tts_utils - INFO : 未戴口罩时间超过阈值(5秒),触发语音提醒
+2025-07-10 18:33:32,019 - utils.tts_utils - INFO : 语音提醒完成: 请规范佩戴口罩！！！ | Please wear your mask properly!!!
+2025-07-10 18:33:34,251 - utils.tts_utils - INFO : 检测到未戴口罩,开始计时: 1752143614.2514672
+2025-07-10 18:33:39,303 - utils.tts_utils - INFO : 未戴口罩时间超过阈值(5秒),触发语音提醒
+2025-07-10 18:33:42,130 - utils.tts_utils - INFO : 语音提醒完成: 请规范佩戴口罩！！！ | Please wear your mask properly!!!
+2025-07-10 18:33:44,308 - utils.tts_utils - INFO : 检测到未戴口罩,开始计时: 1752143624.3081357
+2025-07-10 18:33:44,690 - root - INFO : _______________________推理结束_______________________

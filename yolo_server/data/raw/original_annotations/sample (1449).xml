@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>D:/DataSet/Mask_dataset/YOLO/images/val\</folder>
+	<filename>val_249.jpg</filename>
+	<source>
+		<database>not important</database>
+		<annotation>not important</annotation>
+		<image>not important</image>
+		<flickrid>not important</flickrid>
+	</source>
+	<owner>
+		<flickrid>not important</flickrid>
+		<name>WHO</name>
+	</owner>
+	<size>
+		<width>2340</width>
+		<height>1080</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>mask</name>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1467</xmin>
+			<ymin>312</ymin>
+			<xmax>1513</xmax>
+			<ymax>359</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>mask</name>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>819</xmin>
+			<ymin>322</ymin>
+			<xmax>871</xmax>
+			<ymax>371</ymax>
+		</bndbox>
+	</object>
+</annotation>

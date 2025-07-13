@@ -1,0 +1,87 @@
+<?xml version='1.0' encoding='utf-8'?>
+<annotation>
+	<folder>D:/DataSet/Mask_dataset/YOLO/images/train\</folder>
+	<filename>train_1051.jpg</filename>
+	<source>
+		<database>not important</database>
+		<annotation>not important</annotation>
+		<image>not important</image>
+		<flickrid>not important</flickrid>
+	</source>
+	<owner>
+		<flickrid>not important</flickrid>
+		<name>WHO</name>
+	</owner>
+	<size>
+		<width>2340</width>
+		<height>1080</height>
+		<depth>3</depth>
+	</size>
+	<segmented>0</segmented>
+	<object>
+		<name>mask</name>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1403</xmin>
+			<ymin>429</ymin>
+			<xmax>1463</xmax>
+			<ymax>529</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>mask</name>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>636</xmin>
+			<ymin>445</ymin>
+			<xmax>677</xmax>
+			<ymax>493</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>mask</name>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>674</xmin>
+			<ymin>429</ymin>
+			<xmax>713</xmax>
+			<ymax>476</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>mask</name>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>533</xmin>
+			<ymin>413</ymin>
+			<xmax>599</xmax>
+			<ymax>485</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>mask</name>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>356</xmin>
+			<ymin>370</ymin>
+			<xmax>419</xmax>
+			<ymax>432</ymax>
+		</bndbox>
+	</object>
+	<object>
+		<name>mask</name>
+		<truncated>0</truncated>
+		<difficult>0</difficult>
+		<bndbox>
+			<xmin>1443</xmin>
+			<ymin>460</ymin>
+			<xmax>1521</xmax>
+			<ymax>535</ymax>
+		</bndbox>
+	</object>
+</annotation>

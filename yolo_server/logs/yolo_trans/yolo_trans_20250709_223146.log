@@ -1,0 +1,65 @@
+2025-07-09 22:31:46,118 - root - INFO : ====================日志记录器开始初始化====================
+2025-07-09 22:31:46,119 - root - INFO : 日志记录器最低记录级别: INFO
+2025-07-09 22:31:46,119 - root - INFO : ====================日志记录器初始化完成====================
+2025-07-09 22:31:46,119 - root - INFO : ====================开始清理旧数据集目录====================
+2025-07-09 22:31:46,119 - root - INFO : 已清理旧数据集'train','images 目录: data/train/images'
+2025-07-09 22:31:46,120 - root - INFO : 已初始化新数据集 'train ','images'目录: data/train/images'
+2025-07-09 22:31:46,120 - root - INFO : 已清理旧数据集'train','labels 目录: data/train/labels'
+2025-07-09 22:31:46,120 - root - INFO : 已初始化新数据集 'train ','labels'目录: data/train/labels'
+2025-07-09 22:31:46,120 - root - INFO : 已清理旧数据集'val','images 目录: data/val/images'
+2025-07-09 22:31:46,121 - root - INFO : 已初始化新数据集 'val ','images'目录: data/val/images'
+2025-07-09 22:31:46,121 - root - INFO : 已清理旧数据集'val','labels 目录: data/val/labels'
+2025-07-09 22:31:46,121 - root - INFO : 已初始化新数据集 'val ','labels'目录: data/val/labels'
+2025-07-09 22:31:46,121 - root - INFO : 已清理旧数据集'test','images 目录: data/test/images'
+2025-07-09 22:31:46,122 - root - INFO : 已初始化新数据集 'test ','images'目录: data/test/images'
+2025-07-09 22:31:46,122 - root - INFO : 已清理旧数据集'test','labels 目录: data/test/labels'
+2025-07-09 22:31:46,122 - root - INFO : 已初始化新数据集 'test ','labels'目录: data/test/labels'
+2025-07-09 22:31:46,122 - root - INFO : ====================数据集目录清理完毕=====================
+2025-07-09 22:31:46,123 - root - INFO : ====================开始进行数据处理流程====================
+2025-07-09 22:31:46,123 - root - INFO : 数据处理流程开始，处理原始标注数据 PASCAL_VOC 格式，数据位于：/root/autodl-tmp/SafeYolo/yolo_server/data/raw/original_annotations
+2025-07-09 22:31:46,123 - root - INFO : 已清理YOLO格式的临时标签文件，路径为：data/raw/yolo_staged_labels
+2025-07-09 22:31:46,124 - data_converters_utils - INFO : 开始处理原始标注数据: (PASCAL_VOC)格式，数据位于: /root/autodl-tmp/SafeYolo/yolo_server/data/raw/original_annotations
+2025-07-09 22:31:46,124 - data_converters_utils - INFO : 开始将Pascal Voc标注从: 'data/raw/original_annotations' 转换为YOLO格式
+2025-07-09 22:31:46,124 - data_converters.pascal_voc - INFO : 开始将Pascal VOC XML文件从 '/root/autodl-tmp/SafeYolo/yolo_server/data/raw/original_annotations' 转换为Yolo格式文件 '/root/autodl-tmp/SafeYolo/yolo_server/data/raw/yolo_staged_labels'
+2025-07-09 22:31:46,131 - data_converters.pascal_voc - INFO : =====Pascal VOC转换模式为：自动模式，开始扫描XML文件以获取所有类别信息======
+2025-07-09 22:31:46,252 - data_converters.pascal_voc - INFO : =Pascal Voc模式转换，自动模式，已获取所有类别信息: ['face', 'mask']==
+2025-07-09 22:31:46,363 - data_converters.pascal_voc - WARNING : XML文件 'sample (1586).xml'格式错误:对象 'mask'的边界框超出图片尺寸范围，跳过
+2025-07-09 22:31:46,635 - data_converters.pascal_voc - INFO : 从'/root/autodl-tmp/SafeYolo/yolo_server/data/raw/original_annotations'转换完成，共转换 1600 个XML文件为Yolo格式文件，保存在 '/root/autodl-tmp/SafeYolo/yolo_server/data/raw/yolo_staged_labels'
+2025-07-09 22:31:46,636 - data_converters_utils - INFO : Pascal Voc标注转换成功，已生成YOLO格式标注文件,提取到的类别为: ['face', 'mask']
+2025-07-09 22:31:46,636 - data_converters_utils - INFO : 标注格式: PASCAL_VOC转换处理完成，已生成YOLO格式标注文件,提取到的类别为: ['face', 'mask']
+2025-07-09 22:31:46,636 - root - INFO : PASCAL_VOC格式数据转换成YOLO格式成功已生成 2 个类别,具体内容为：['face', 'mask']
+2025-07-09 22:31:46,637 - root - INFO : 原始数据暂存区通过检查，图像位于：data/raw/images,YOLO标签位于：data/raw/yolo_staged_labels
+2025-07-09 22:31:46,664 - root - INFO : 找到 1600 个匹配的图像和标签文件
+2025-07-09 22:31:46,675 - root - INFO : 数据集划分完成，具体结果如下
+2025-07-09 22:31:46,675 - root - INFO : 训练集：1280 个标签文件，1280 个图像文件
+2025-07-09 22:31:46,675 - root - INFO : 验证集：160 个标签文件，160 个图像文件
+2025-07-09 22:31:46,675 - root - INFO : 测试集：160 个标签文件，160 个图像文件
+2025-07-09 22:31:46,675 - root - INFO : 正在处理 train 数据集,共1280 个标签文件，1280 个图像文件
+2025-07-09 22:31:48,211 - root - INFO : 复制图像文件完成，共成功复制 1280 个文件，失败 0 个文件
+2025-07-09 22:31:48,430 - root - INFO : 复制标签文件完成，共成功复制 1280 个文件，失败 0 个文件
+2025-07-09 22:31:48,431 - root - INFO : 正在处理 val 数据集,共160 个标签文件，160 个图像文件
+2025-07-09 22:31:48,599 - root - INFO : 复制图像文件完成，共成功复制 160 个文件，失败 0 个文件
+2025-07-09 22:31:48,626 - root - INFO : 复制标签文件完成，共成功复制 160 个文件，失败 0 个文件
+2025-07-09 22:31:48,627 - root - INFO : 正在处理 test 数据集,共160 个标签文件，160 个图像文件
+2025-07-09 22:31:48,813 - root - INFO : 复制图像文件完成，共成功复制 160 个文件，失败 0 个文件
+2025-07-09 22:31:48,851 - root - INFO : 复制标签文件完成，共成功复制 160 个文件，失败 0 个文件
+2025-07-09 22:31:48,852 - root - INFO : 已生成数据配置文件 configs/data.yaml
+2025-07-09 22:31:48,852 - root - INFO : 数据配置文件内容如下：
+path: /root/autodl-tmp/SafeYolo/yolo_server/data
+train: /root/autodl-tmp/SafeYolo/yolo_server/data/train/images
+val: /root/autodl-tmp/SafeYolo/yolo_server/data/val/images
+test: /root/autodl-tmp/SafeYolo/yolo_server/data/test/images
+nc: 2
+names: [face, mask]
+2025-07-09 22:31:48,853 - root - INFO : =====================数据处理流程结束=====================
+2025-07-09 22:31:48,853 - YOLO DataConversion - INFO : 性能报告: '数据准备与划分' 平均耗时: 2.73 秒
+2025-07-09 22:31:48,854 - root - INFO : 所有数据处理流程完成，请检查以下路径文件
+2025-07-09 22:31:48,854 - root - INFO : 训练集图像目录：data/train/images
+2025-07-09 22:31:48,854 - root - INFO : 训练集标注文件：data/train/labels
+2025-07-09 22:31:48,854 - root - INFO : 验证集图像目录：data/val/images
+2025-07-09 22:31:48,854 - root - INFO : 验证集标注文件：data/val/labels
+2025-07-09 22:31:48,855 - root - INFO : 测试集图像目录：data/test/images
+2025-07-09 22:31:48,855 - root - INFO : 测试集标注文件：data/test/labels
+2025-07-09 22:31:48,855 - root - INFO : 数据集配置文件：configs
+2025-07-09 22:31:48,855 - root - INFO : 详细的日志文件位于 logs
+2025-07-09 22:31:48,855 - root - INFO : 接下来请执行数据验证脚本 yolo_validate.py 以验证数据转换是否正确

@@ -1,0 +1,60 @@
+# === YOLO 核心验证模式配置 ===
+# 注：带(*)参数为高频调整项
+# 参数参考: https://docs.ultralytics.com/zh/modes/val/#arguments-for-yolo-model-validation
+# 可手动修改参数,或通过命令行进行覆盖如 (--conf 0.5) 
+
+# --- 核心参数 (优先设置) ---
+# (*)数据集配置文件路径 (YAML格式，需定义val/test路径和类别)
+data: data.yaml
+# (*)输入图像尺寸，默认 640
+imgsz: 640
+# (*)批次大小，默认 16
+batch: 16
+# (*)计算设备，0 表示 GPU，cpu 表示 CPU
+device: cpu
+# (*)置信度阈值，默认 0.001
+conf: 0.001
+# (*)IOU 阈值，默认 0.7
+iou: 0.7
+# (*)每幅图像最大检测次数，默认 300
+max_det: 300
+# (*)是否使用半精度推理 (FP16)，默认 True
+half: True
+
+# --- 数据加载参数 ---
+# 数据加载线程数，默认 8
+workers: 8
+# 是否使用测试时间增强 (TTA)，默认 False
+augment: False
+
+# --- 输出参数 ---
+# 验证结果保存目录，默认 runs/val
+project: D:\PycharmProjects\SafeYolo\yolo_server\runs\val
+# 验证运行名称，默认 exp
+name: exp
+# 是否保存验证结果为 JSON，默认 False
+save_json: False
+# 是否保存验证结果为 TXT，默认 False
+save_txt: True
+# 是否在 TXT 中包含置信度值，默认 False
+save_conf: True
+# 是否保存检测到的物体裁剪图像，默认 False
+save_crop: True
+# 是否显示详细验证信息，默认 False
+verbose: False
+# 是否生成预测结果和混淆矩阵图，默认 False
+plots: True
+
+# --- 模型参数 ---
+# 是否使用 OpenCV DNN 推理，默认 False
+dnn: False
+# 是否使用矩形推理，默认 True
+rect: True
+# 是否将所有类别视为单一类别，默认 False
+single_cls: False
+# 是否启用与类别无关的 NMS，默认 False
+agnostic_nms: False
+# 指定验证的类 ID 列表，默认 None
+classes: None
+# 数据集分割 (val/test/train)，默认 val
+split: val

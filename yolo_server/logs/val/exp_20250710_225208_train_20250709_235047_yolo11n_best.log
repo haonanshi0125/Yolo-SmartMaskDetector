@@ -1,0 +1,116 @@
+2025-07-10 22:52:08,677 - root - INFO : ====================日志记录器开始初始化====================
+2025-07-10 22:52:08,678 - root - INFO : 日志记录器最低记录级别: INFO
+2025-07-10 22:52:08,678 - root - INFO : ====================日志记录器初始化完成====================
+2025-07-10 22:52:08,678 - root - INFO : YOLO 口罩识别模型验证程序启动
+2025-07-10 22:52:08,678 - config_utils - INFO : 开始加载配置文件: D:\PycharmProjects\SafeYolo\yolo_server\configs\val.yaml
+2025-07-10 22:52:08,681 - config_utils - INFO : 配置文件加载成功: D:\PycharmProjects\SafeYolo\yolo_server\configs\val.yaml
+2025-07-10 22:52:11,551 - system_utils - INFO : ========================================
+2025-07-10 22:52:11,551 - system_utils - INFO : 设备信息概览
+2025-07-10 22:52:11,552 - system_utils - INFO : ========================================
+2025-07-10 22:52:11,552 - system_utils - INFO : 基本设备信息:
+2025-07-10 22:52:11,552 - system_utils - INFO :     操作系统            : Windows 11
+2025-07-10 22:52:11,552 - system_utils - INFO :     Python版本          : 3.12.11
+2025-07-10 22:52:11,552 - system_utils - INFO :     Python解释器路径    : C:\Users\asus\anaconda3\envs\YOLO\python.exe
+2025-07-10 22:52:11,552 - system_utils - INFO :     Python虚拟环境      : YOLO
+2025-07-10 22:52:11,552 - system_utils - INFO :     当前检测时间        : 2025-07-10 22:52:08
+2025-07-10 22:52:11,552 - system_utils - INFO :     主机名              : DESKTOP-2KJPPP1
+2025-07-10 22:52:11,552 - system_utils - INFO :     当前用户            : asus
+2025-07-10 22:52:11,552 - system_utils - INFO : CPU信息:
+2025-07-10 22:52:11,552 - system_utils - INFO :     CPU型号             : 12th Gen Intel(R) Core(TM) i7-12700H
+2025-07-10 22:52:11,552 - system_utils - INFO :     CPU物理核心数       : 14
+2025-07-10 22:52:11,552 - system_utils - INFO :     CPU逻辑核心数       : 20
+2025-07-10 22:52:11,552 - system_utils - INFO :     CPU使用率           : 23.3%
+2025-07-10 22:52:11,552 - system_utils - INFO : GPU信息:
+2025-07-10 22:52:11,552 - system_utils - INFO :     CUDA是否可用        : False
+2025-07-10 22:52:11,552 - system_utils - INFO :     CUDA版本            : N/A
+2025-07-10 22:52:11,552 - system_utils - INFO :     NVIDIA驱动程序版本  : N/A
+2025-07-10 22:52:11,552 - system_utils - INFO :     可用的GPU数量       : 0
+2025-07-10 22:52:11,552 - system_utils - INFO : 内存信息:
+2025-07-10 22:52:11,552 - system_utils - INFO :     总内存              : 15.70 GB
+2025-07-10 22:52:11,552 - system_utils - INFO :     已使用内存          : 11.21 GB
+2025-07-10 22:52:11,552 - system_utils - INFO :     剩余内存            : 4.48 GB
+2025-07-10 22:52:11,552 - system_utils - INFO :     内存使用率          : 71.4%
+2025-07-10 22:52:11,552 - system_utils - INFO : 环境信息:
+2025-07-10 22:52:11,552 - system_utils - INFO :     PyTorch版本         : 2.7.1+cpu
+2025-07-10 22:52:11,552 - system_utils - INFO :     cuDNN版本           : N/A
+2025-07-10 22:52:11,552 - system_utils - INFO :     Ultralytics_Version : 8.3.160
+2025-07-10 22:52:11,552 - system_utils - INFO :     ONNX版本            : 未安装
+2025-07-10 22:52:11,552 - system_utils - INFO :     Numpy版本           : 2.3.1
+2025-07-10 22:52:11,553 - system_utils - INFO :     OpenCV版本          : 4.11.0.86
+2025-07-10 22:52:11,553 - system_utils - INFO :     Pillow版本          : 11.2.1
+2025-07-10 22:52:11,553 - system_utils - INFO :     Torchvision版本     : 0.22.1
+2025-07-10 22:52:11,553 - system_utils - INFO : 磁盘信息:
+2025-07-10 22:52:11,553 - system_utils - INFO :     总空间              : 152.30 GB
+2025-07-10 22:52:11,553 - system_utils - INFO :     已用空间            : 27.28 GB
+2025-07-10 22:52:11,553 - system_utils - INFO :     剩余空间            : 125.03 GB
+2025-07-10 22:52:11,553 - system_utils - INFO :     使用率              : 17.9%
+2025-07-10 22:52:11,553 - system_utils - INFO : GPU详细列表:
+2025-07-10 22:52:11,553 - system_utils - INFO :   --- GPU 0 详情 ---
+2025-07-10 22:52:11,553 - system_utils - INFO :     信息                     : 未检测到CUDA可用GPU (当前使用CPU)
+2025-07-10 22:52:11,553 - system_utils - INFO : ========================================
+2025-07-10 22:52:11,553 - config_utils - INFO : ====================开始记录模型参数信息====================
+2025-07-10 22:52:11,553 - config_utils - INFO : ----------------------------------------
+2025-07-10 22:52:11,556 - config_utils - INFO : data                : D:\PycharmProjects\SafeYolo\yolo_server\configs\data.yaml (来源: 命令行)
+2025-07-10 22:52:11,556 - config_utils - INFO : imgsz               : 640 (来源: Yaml)
+2025-07-10 22:52:11,556 - config_utils - INFO : batch               : 16 (来源: 命令行)
+2025-07-10 22:52:11,556 - config_utils - INFO : save_json           : False (来源: Yaml)
+2025-07-10 22:52:11,556 - config_utils - INFO : conf                : 0.25 (来源: 命令行)
+2025-07-10 22:52:11,556 - config_utils - INFO : iou                 : 0.45 (来源: 命令行)
+2025-07-10 22:52:11,556 - config_utils - INFO : max_det             : 300 (来源: Yaml)
+2025-07-10 22:52:11,556 - config_utils - INFO : half                : True (来源: Yaml)
+2025-07-10 22:52:11,556 - config_utils - INFO : device              : cpu (来源: 命令行)
+2025-07-10 22:52:11,556 - config_utils - INFO : dnn                 : False (来源: Yaml)
+2025-07-10 22:52:11,556 - config_utils - INFO : plots               : True (来源: Yaml)
+2025-07-10 22:52:11,556 - config_utils - INFO : classes             : None (来源: Yaml)
+2025-07-10 22:52:11,556 - config_utils - INFO : rect                : True (来源: Yaml)
+2025-07-10 22:52:11,556 - config_utils - INFO : split               : test (来源: 命令行)
+2025-07-10 22:52:11,556 - config_utils - INFO : project             : D:\PycharmProjects\SafeYolo\yolo_server\runs\val (来源: Yaml)
+2025-07-10 22:52:11,556 - config_utils - INFO : name                : exp (来源: Yaml)
+2025-07-10 22:52:11,556 - config_utils - INFO : verbose             : False (来源: Yaml)
+2025-07-10 22:52:11,556 - config_utils - INFO : save_txt            : True (来源: Yaml)
+2025-07-10 22:52:11,556 - config_utils - INFO : save_conf           : True (来源: Yaml)
+2025-07-10 22:52:11,556 - config_utils - INFO : save_crop           : True (来源: Yaml)
+2025-07-10 22:52:11,556 - config_utils - INFO : workers             : 8 (来源: 命令行)
+2025-07-10 22:52:11,556 - config_utils - INFO : augment             : False (来源: Yaml)
+2025-07-10 22:52:11,556 - config_utils - INFO : agnostic_nms        : False (来源: Yaml)
+2025-07-10 22:52:11,556 - config_utils - INFO : single_cls          : False (来源: Yaml)
+2025-07-10 22:52:11,556 - config_utils - INFO : weights             : train_20250709_235047_yolo11n_best.pt (来源: 命令行)
+2025-07-10 22:52:11,559 - datainfo_utils - INFO : ========================================
+2025-07-10 22:52:11,559 - datainfo_utils - INFO : 数据集信息 (Test 模式)
+2025-07-10 22:52:11,559 - datainfo_utils - INFO : ----------------------------------------
+2025-07-10 22:52:11,559 - datainfo_utils - INFO : Config File         : data.yaml
+2025-07-10 22:52:11,559 - datainfo_utils - INFO : Class Count         : 2
+2025-07-10 22:52:11,559 - datainfo_utils - INFO : Class Names         : face, mask
+2025-07-10 22:52:11,559 - datainfo_utils - INFO : Sample Count        : 160
+2025-07-10 22:52:11,559 - datainfo_utils - INFO : Data Source         : Test images from: D:\PycharmProjects\SafeYolo\yolo_server\data\test\images
+2025-07-10 22:52:11,559 - datainfo_utils - INFO : ----------------------------------------
+2025-07-10 22:52:11,559 - root - INFO : 加载模型权重文件: D:\PycharmProjects\SafeYolo\yolo_server\models\checkpoints\train_20250709_235047_yolo11n_best.pt
+2025-07-10 22:53:52,441 - root - INFO : 性能报告: '模型验证' 平均耗时: 1 分钟 40.56 秒
+2025-07-10 22:53:52,441 - result_utils - INFO : ============================================================
+2025-07-10 22:53:52,441 - result_utils - INFO : YOLO Results Summary (Detect Task)
+2025-07-10 22:53:52,441 - result_utils - INFO : ============================================================
+2025-07-10 22:53:52,441 - result_utils - INFO : Task                : detect
+2025-07-10 22:53:52,441 - result_utils - INFO : Save Directory      : D:\PycharmProjects\SafeYolo\yolo_server\runs\val\exp
+2025-07-10 22:53:52,441 - result_utils - INFO : Timestamp           : 2025-07-10T22:53:52.441144
+2025-07-10 22:53:52,441 - result_utils - INFO : ----------------------------------------
+2025-07-10 22:53:52,441 - result_utils - INFO : Processing Speed (ms/image)
+2025-07-10 22:53:52,441 - result_utils - INFO : ----------------------------------------
+2025-07-10 22:53:52,441 - result_utils - INFO : Preprocess          : 0.348 ms
+2025-07-10 22:53:52,441 - result_utils - INFO : Inference           : 599.903 ms
+2025-07-10 22:53:52,441 - result_utils - INFO : Loss Calc           : 0.000 ms
+2025-07-10 22:53:52,441 - result_utils - INFO : Postprocess         : 0.286 ms
+2025-07-10 22:53:52,442 - result_utils - INFO : Total Per Image     : 600.537 ms
+2025-07-10 22:53:52,442 - result_utils - INFO : ----------------------------------------
+2025-07-10 22:53:52,442 - result_utils - INFO : Overall Evaluation Metrics
+2025-07-10 22:53:52,442 - result_utils - INFO : ----------------------------------------
+2025-07-10 22:53:52,442 - result_utils - INFO : Fitness Score       : 0.5592
+2025-07-10 22:53:52,442 - result_utils - INFO : Precision(B)        : 0.8554
+2025-07-10 22:53:52,442 - result_utils - INFO : Recall(B)           : 0.8292
+2025-07-10 22:53:52,442 - result_utils - INFO : mAP50(B)            : 0.8530
+2025-07-10 22:53:52,442 - result_utils - INFO : mAP50-95(B)         : 0.5265
+2025-07-10 22:53:52,442 - result_utils - INFO : ----------------------------------------
+2025-07-10 22:53:52,442 - result_utils - INFO : Class-wise mAP@0.5:0.95 (Box Metrics)
+2025-07-10 22:53:52,442 - result_utils - INFO : ----------------------------------------
+2025-07-10 22:53:52,442 - result_utils - INFO : face                : 0.5891
+2025-07-10 22:53:52,442 - result_utils - INFO : mask                : 0.4640
+2025-07-10 22:53:52,442 - result_utils - INFO : ============================================================

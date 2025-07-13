@@ -1,0 +1,168 @@
+2025-07-09 23:22:02,196 - root - INFO : ====================日志记录器开始初始化====================
+2025-07-09 23:22:02,196 - root - INFO : 日志记录器最低记录级别: INFO
+2025-07-09 23:22:02,196 - root - INFO : ====================日志记录器初始化完成====================
+2025-07-09 23:22:02,196 - root - INFO : ==============YOLO 口罩识别模型训练脚本启动===============
+2025-07-09 23:22:02,196 - config_utils - INFO : 配置文件不存在，尝试生成默认配置文件: /root/autodl-tmp/SafeYolo/yolo_server/configs/train.yaml
+2025-07-09 23:22:02,196 - config_utils - INFO : 生成默认 train 配置文件成功: /root/autodl-tmp/SafeYolo/yolo_server/configs/train.yaml
+2025-07-09 23:22:02,197 - config_utils - INFO : 开始加载配置文件: /root/autodl-tmp/SafeYolo/yolo_server/configs/train.yaml
+2025-07-09 23:22:02,201 - config_utils - INFO : 配置文件加载成功: /root/autodl-tmp/SafeYolo/yolo_server/configs/train.yaml
+2025-07-09 23:22:03,499 - system_utils - INFO : ========================================
+2025-07-09 23:22:03,499 - system_utils - INFO : 设备信息概览
+2025-07-09 23:22:03,499 - system_utils - INFO : ========================================
+2025-07-09 23:22:03,499 - system_utils - INFO : 基本设备信息:
+2025-07-09 23:22:03,499 - system_utils - INFO :     操作系统            : Linux 5.15.0-86-generic
+2025-07-09 23:22:03,499 - system_utils - INFO :     Python版本          : 3.12.3
+2025-07-09 23:22:03,500 - system_utils - INFO :     Python解释器路径    : /root/miniconda3/bin/python
+2025-07-09 23:22:03,500 - system_utils - INFO :     Python虚拟环境      : 未知
+2025-07-09 23:22:03,500 - system_utils - INFO :     当前检测时间        : 2025-07-09 23:22:02
+2025-07-09 23:22:03,500 - system_utils - INFO :     主机名              : autodl-container-9ed51187fa-7b673835
+2025-07-09 23:22:03,500 - system_utils - INFO :     当前用户            : root
+2025-07-09 23:22:03,500 - system_utils - INFO : CPU信息:
+2025-07-09 23:22:03,500 - system_utils - INFO :     CPU型号             : Intel Xeon Processor (Skylake, IBRS)
+2025-07-09 23:22:03,500 - system_utils - INFO :     CPU物理核心数       : 40
+2025-07-09 23:22:03,500 - system_utils - INFO :     CPU逻辑核心数       : 80
+2025-07-09 23:22:03,500 - system_utils - INFO :     CPU使用率           : 5.9%
+2025-07-09 23:22:03,500 - system_utils - INFO : GPU信息:
+2025-07-09 23:22:03,500 - system_utils - INFO :     CUDA是否可用        : True
+2025-07-09 23:22:03,501 - system_utils - INFO :     CUDA版本            : 12.4
+2025-07-09 23:22:03,501 - system_utils - INFO :     NVIDIA驱动程序版本  : 550.90.07
+2025-07-09 23:22:03,501 - system_utils - INFO :     可用的GPU数量       : 1
+2025-07-09 23:22:03,501 - system_utils - INFO : 内存信息:
+2025-07-09 23:22:03,501 - system_utils - INFO :     总内存              : 629.87 GB
+2025-07-09 23:22:03,501 - system_utils - INFO :     已使用内存          : 25.01 GB
+2025-07-09 23:22:03,501 - system_utils - INFO :     剩余内存            : 600.40 GB
+2025-07-09 23:22:03,501 - system_utils - INFO :     内存使用率          : 4.7%
+2025-07-09 23:22:03,501 - system_utils - INFO : 环境信息:
+2025-07-09 23:22:03,501 - system_utils - INFO :     PyTorch版本         : 2.5.1+cu124
+2025-07-09 23:22:03,501 - system_utils - INFO :     cuDNN版本           : 90100
+2025-07-09 23:22:03,501 - system_utils - INFO :     Ultralytics_Version : 8.3.162
+2025-07-09 23:22:03,502 - system_utils - INFO :     ONNX版本            : 未安装
+2025-07-09 23:22:03,502 - system_utils - INFO :     Numpy版本           : 2.1.3
+2025-07-09 23:22:03,502 - system_utils - INFO :     OpenCV版本          : 4.11.0.86
+2025-07-09 23:22:03,502 - system_utils - INFO :     Pillow版本          : 11.0.0
+2025-07-09 23:22:03,502 - system_utils - INFO :     Torchvision版本     : 0.20.1+cu124
+2025-07-09 23:22:03,502 - system_utils - INFO : 磁盘信息:
+2025-07-09 23:22:03,502 - system_utils - INFO :     总空间              : 30.00 GB
+2025-07-09 23:22:03,503 - system_utils - INFO :     已用空间            : 696.04 MB
+2025-07-09 23:22:03,503 - system_utils - INFO :     剩余空间            : 29.32 GB
+2025-07-09 23:22:03,503 - system_utils - INFO :     使用率              : 2.3%
+2025-07-09 23:22:03,503 - system_utils - INFO : GPU详细列表:
+2025-07-09 23:22:03,503 - system_utils - INFO :   --- GPU 0 详情 ---
+2025-07-09 23:22:03,503 - system_utils - INFO :     GPU_0_型号               : NVIDIA A100-PCIE-40GB
+2025-07-09 23:22:03,503 - system_utils - INFO :     GPU_0_总显存             : 39.38 GB
+2025-07-09 23:22:03,503 - system_utils - INFO :     GPU_0_算力               : 8.0
+2025-07-09 23:22:03,503 - system_utils - INFO :     GPU_0_多处理器数量       : 108
+2025-07-09 23:22:03,503 - system_utils - INFO :     GPU_0_PyTorch_已分配显存 : 0.00 MB
+2025-07-09 23:22:03,504 - system_utils - INFO :     GPU_0_PyTorch_已缓存显存 : 0.00 MB
+2025-07-09 23:22:03,504 - system_utils - INFO :     GPU_0_实时使用信息       : pynvml未加载或初始化失败
+2025-07-09 23:22:03,504 - system_utils - INFO : ========================================
+2025-07-09 23:22:03,513 - datainfo_utils - INFO : ========================================
+2025-07-09 23:22:03,513 - datainfo_utils - INFO : 数据集信息 (Train 模式)
+2025-07-09 23:22:03,513 - datainfo_utils - INFO : ----------------------------------------
+2025-07-09 23:22:03,513 - datainfo_utils - INFO : Config File         : data.yaml
+2025-07-09 23:22:03,513 - datainfo_utils - INFO : Class Count         : 2
+2025-07-09 23:22:03,514 - datainfo_utils - INFO : Class Names         : face, mask
+2025-07-09 23:22:03,514 - datainfo_utils - INFO : Sample Count        : 1280
+2025-07-09 23:22:03,514 - datainfo_utils - INFO : Data Source         : Train images from: /root/autodl-tmp/SafeYolo/yolo_server/data/train/images
+2025-07-09 23:22:03,514 - datainfo_utils - INFO : ----------------------------------------
+2025-07-09 23:22:03,514 - config_utils - INFO : ====================开始记录模型参数信息====================
+2025-07-09 23:22:03,515 - config_utils - INFO : ----------------------------------------
+2025-07-09 23:22:03,515 - config_utils - INFO : data                : /root/autodl-tmp/SafeYolo/yolo_server/configs/data.yaml (来源: 命令行)
+2025-07-09 23:22:03,515 - config_utils - INFO : epochs              : 300 (来源: 命令行)
+2025-07-09 23:22:03,515 - config_utils - INFO : time                : None (来源: Yaml)
+2025-07-09 23:22:03,515 - config_utils - INFO : batch               : 128 (来源: 命令行)
+2025-07-09 23:22:03,516 - config_utils - INFO : imgsz               : 640 (来源: Yaml)
+2025-07-09 23:22:03,516 - config_utils - INFO : device              : 0 (来源: 命令行)
+2025-07-09 23:22:03,516 - config_utils - INFO : workers             : 16 (来源: 命令行)
+2025-07-09 23:22:03,516 - config_utils - INFO : patience            : 100 (来源: Yaml)
+2025-07-09 23:22:03,516 - config_utils - INFO : save                : True (来源: Yaml)
+2025-07-09 23:22:03,516 - config_utils - INFO : save_period         : -1 (来源: Yaml)
+2025-07-09 23:22:03,516 - config_utils - INFO : cache               : False (来源: Yaml)
+2025-07-09 23:22:03,517 - config_utils - INFO : resume              : False (来源: Yaml)
+2025-07-09 23:22:03,517 - config_utils - INFO : amp                 : True (来源: Yaml)
+2025-07-09 23:22:03,517 - config_utils - INFO : project             : /root/autodl-tmp/SafeYolo/yolo_server/runs/detect (来源: Yaml)
+2025-07-09 23:22:03,517 - config_utils - INFO : name                : train (来源: Yaml)
+2025-07-09 23:22:03,517 - config_utils - INFO : exist_ok            : False (来源: Yaml)
+2025-07-09 23:22:03,517 - config_utils - INFO : pretrained          : True (来源: Yaml)
+2025-07-09 23:22:03,517 - config_utils - INFO : optimizer           : AdamW (来源: Yaml)
+2025-07-09 23:22:03,518 - config_utils - INFO : seed                : 0 (来源: Yaml)
+2025-07-09 23:22:03,518 - config_utils - INFO : deterministic       : True (来源: Yaml)
+2025-07-09 23:22:03,518 - config_utils - INFO : single_cls          : False (来源: Yaml)
+2025-07-09 23:22:03,518 - config_utils - INFO : classes             : None (来源: Yaml)
+2025-07-09 23:22:03,519 - config_utils - INFO : rect                : False (来源: Yaml)
+2025-07-09 23:22:03,519 - config_utils - INFO : cos_lr              : False (来源: Yaml)
+2025-07-09 23:22:03,519 - config_utils - INFO : multi_scale         : False (来源: Yaml)
+2025-07-09 23:22:03,519 - config_utils - INFO : box                 : 7.5 (来源: Yaml)
+2025-07-09 23:22:03,519 - config_utils - INFO : cls                 : 0.5 (来源: Yaml)
+2025-07-09 23:22:03,520 - config_utils - INFO : dfl                 : 1.5 (来源: Yaml)
+2025-07-09 23:22:03,520 - config_utils - INFO : pose                : 12.0 (来源: Yaml)
+2025-07-09 23:22:03,520 - config_utils - INFO : kobj                : 1.0 (来源: Yaml)
+2025-07-09 23:22:03,520 - config_utils - INFO : lr0                 : 0.001 (来源: Yaml)
+2025-07-09 23:22:03,520 - config_utils - INFO : lrf                 : 0.01 (来源: Yaml)
+2025-07-09 23:22:03,520 - config_utils - INFO : momentum            : 0.937 (来源: Yaml)
+2025-07-09 23:22:03,520 - config_utils - INFO : weight_decay        : 0.0005 (来源: Yaml)
+2025-07-09 23:22:03,521 - config_utils - INFO : warmup_epochs       : 3.0 (来源: Yaml)
+2025-07-09 23:22:03,521 - config_utils - INFO : warmup_momentum     : 0.8 (来源: Yaml)
+2025-07-09 23:22:03,521 - config_utils - INFO : warmup_bias_lr      : 0.1 (来源: Yaml)
+2025-07-09 23:22:03,521 - config_utils - INFO : hsv_h               : 0.015 (来源: Yaml)
+2025-07-09 23:22:03,521 - config_utils - INFO : hsv_s               : 0.7 (来源: Yaml)
+2025-07-09 23:22:03,521 - config_utils - INFO : hsv_v               : 0.4 (来源: Yaml)
+2025-07-09 23:22:03,522 - config_utils - INFO : degrees             : 0.0 (来源: Yaml)
+2025-07-09 23:22:03,522 - config_utils - INFO : translate           : 0.1 (来源: Yaml)
+2025-07-09 23:22:03,522 - config_utils - INFO : scale               : 0.5 (来源: Yaml)
+2025-07-09 23:22:03,523 - config_utils - INFO : shear               : 0.0 (来源: Yaml)
+2025-07-09 23:22:03,523 - config_utils - INFO : perspective         : 0.0 (来源: Yaml)
+2025-07-09 23:22:03,523 - config_utils - INFO : flipud              : 0.0 (来源: Yaml)
+2025-07-09 23:22:03,523 - config_utils - INFO : fliplr              : 0.5 (来源: Yaml)
+2025-07-09 23:22:03,523 - config_utils - INFO : bgr                 : 0.0 (来源: Yaml)
+2025-07-09 23:22:03,523 - config_utils - INFO : mosaic              : 1.0 (来源: Yaml)
+2025-07-09 23:22:03,524 - config_utils - INFO : mixup               : 0.0 (来源: Yaml)
+2025-07-09 23:22:03,524 - config_utils - INFO : cutmix              : 0.0 (来源: Yaml)
+2025-07-09 23:22:03,524 - config_utils - INFO : copy_paste          : 0.0 (来源: Yaml)
+2025-07-09 23:22:03,524 - config_utils - INFO : copy_paste_mode     : flip (来源: Yaml)
+2025-07-09 23:22:03,524 - config_utils - INFO : auto_augment        : randaugment (来源: Yaml)
+2025-07-09 23:22:03,524 - config_utils - INFO : erasing             : 0.4 (来源: Yaml)
+2025-07-09 23:22:03,525 - config_utils - INFO : close_mosaic        : 10 (来源: Yaml)
+2025-07-09 23:22:03,525 - config_utils - INFO : nbs                 : 64 (来源: Yaml)
+2025-07-09 23:22:03,525 - config_utils - INFO : overlap_mask        : True (来源: Yaml)
+2025-07-09 23:22:03,525 - config_utils - INFO : mask_ratio          : 4 (来源: Yaml)
+2025-07-09 23:22:03,525 - config_utils - INFO : dropout             : 0.0 (来源: Yaml)
+2025-07-09 23:22:03,526 - config_utils - INFO : val                 : True (来源: Yaml)
+2025-07-09 23:22:03,526 - config_utils - INFO : plots               : True (来源: Yaml)
+2025-07-09 23:22:03,526 - config_utils - INFO : profile             : False (来源: Yaml)
+2025-07-09 23:22:03,526 - config_utils - INFO : freeze              : None (来源: Yaml)
+2025-07-09 23:22:03,527 - config_utils - INFO : fraction            : 1.0 (来源: Yaml)
+2025-07-09 23:22:03,527 - config_utils - INFO : weights             : yolo11n.pt (来源: 命令行)
+2025-07-09 23:22:03,527 - root - INFO : 初始化YOLO模型,加载模型yolo11n.pt
+2025-07-09 23:50:47,233 - root - INFO : 性能报告: '模型训练' 平均耗时: 28 分钟 43.58 秒
+2025-07-09 23:50:47,233 - root - INFO : 模型的训练结果保存在: /root/autodl-tmp/SafeYolo/yolo_server/runs/detect/train
+2025-07-09 23:50:47,234 - result_utils - INFO : ============================================================
+2025-07-09 23:50:47,235 - result_utils - INFO : YOLO Results Summary (Detect Task)
+2025-07-09 23:50:47,235 - result_utils - INFO : ============================================================
+2025-07-09 23:50:47,235 - result_utils - INFO : Task                : detect
+2025-07-09 23:50:47,235 - result_utils - INFO : Save Directory      : /root/autodl-tmp/SafeYolo/yolo_server/runs/detect/train
+2025-07-09 23:50:47,235 - result_utils - INFO : Timestamp           : 2025-07-09T23:50:47.234459
+2025-07-09 23:50:47,235 - result_utils - INFO : ----------------------------------------
+2025-07-09 23:50:47,235 - result_utils - INFO : Processing Speed (ms/image)
+2025-07-09 23:50:47,235 - result_utils - INFO : ----------------------------------------
+2025-07-09 23:50:47,235 - result_utils - INFO : Preprocess          : 0.126 ms
+2025-07-09 23:50:47,235 - result_utils - INFO : Inference           : 0.497 ms
+2025-07-09 23:50:47,235 - result_utils - INFO : Loss Calc           : 0.000 ms
+2025-07-09 23:50:47,235 - result_utils - INFO : Postprocess         : 1.029 ms
+2025-07-09 23:50:47,236 - result_utils - INFO : Total Per Image     : 1.651 ms
+2025-07-09 23:50:47,236 - result_utils - INFO : ----------------------------------------
+2025-07-09 23:50:47,236 - result_utils - INFO : Overall Evaluation Metrics
+2025-07-09 23:50:47,236 - result_utils - INFO : ----------------------------------------
+2025-07-09 23:50:47,236 - result_utils - INFO : Fitness Score       : 0.5149
+2025-07-09 23:50:47,236 - result_utils - INFO : Precision(B)        : 0.8730
+2025-07-09 23:50:47,236 - result_utils - INFO : Recall(B)           : 0.8130
+2025-07-09 23:50:47,236 - result_utils - INFO : mAP50(B)            : 0.8645
+2025-07-09 23:50:47,236 - result_utils - INFO : mAP50-95(B)         : 0.4761
+2025-07-09 23:50:47,236 - result_utils - INFO : ----------------------------------------
+2025-07-09 23:50:47,236 - result_utils - INFO : Class-wise mAP@0.5:0.95 (Box Metrics)
+2025-07-09 23:50:47,236 - result_utils - INFO : ----------------------------------------
+2025-07-09 23:50:47,237 - result_utils - INFO : face                : 0.4973
+2025-07-09 23:50:47,237 - result_utils - INFO : mask                : 0.4549
+2025-07-09 23:50:47,237 - result_utils - INFO : ============================================================
+2025-07-09 23:50:47,241 - model_utils - INFO : 模型复制成功: /root/autodl-tmp/SafeYolo/yolo_server/runs/detect/train/weights/best.pt -> /root/autodl-tmp/SafeYolo/yolo_server/models/checkpoints/train_20250709_235047_yolo11n_best.pt
+2025-07-09 23:50:47,252 - model_utils - INFO : 模型复制成功: /root/autodl-tmp/SafeYolo/yolo_server/runs/detect/train/weights/last.pt -> /root/autodl-tmp/SafeYolo/yolo_server/models/checkpoints/train_20250709_235047_yolo11n_last.pt

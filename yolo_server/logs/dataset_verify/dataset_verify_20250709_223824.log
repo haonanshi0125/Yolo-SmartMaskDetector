@@ -1,0 +1,67 @@
+2025-07-09 22:38:24,556 - root - INFO : ====================日志记录器开始初始化====================
+2025-07-09 22:38:24,556 - root - INFO : 日志记录器最低记录级别: INFO
+2025-07-09 22:38:24,556 - root - INFO : ====================日志记录器初始化完成====================
+2025-07-09 22:38:24,556 - root - INFO : 当前验证配置：模式=FULL，任务类型=detection，删除非法数据=True 采样比例=0.1，最小样本数量=20
+2025-07-09 22:38:24,556 - root - INFO : 开始数据集配置，内容验证，与类别分布分析（模式：FULL）
+2025-07-09 22:38:24,557 - utils.data_validation - INFO : 数据集类别数量与配置文件一致，类别数量为：2，类别为：['face', 'mask']
+2025-07-09 22:38:24,557 - utils.data_validation - INFO : 开始验证和分析 train 划分路径: /root/autodl-tmp/SafeYolo/yolo_server/data/train/images
+2025-07-09 22:38:24,565 - utils.data_validation - INFO : 图像目录 /root/autodl-tmp/SafeYolo/yolo_server/data/train/images 包含 1280 张图像。
+2025-07-09 22:38:24,565 - utils.data_validation - INFO : train 划分验证模式为 FULL，正在验证和分析所有 1280 张图像。
+2025-07-09 22:38:24,644 - utils.data_validation - INFO : 开始验证和分析 val 划分路径: /root/autodl-tmp/SafeYolo/yolo_server/data/val/images
+2025-07-09 22:38:24,645 - utils.data_validation - INFO : 图像目录 /root/autodl-tmp/SafeYolo/yolo_server/data/val/images 包含 160 张图像。
+2025-07-09 22:38:24,645 - utils.data_validation - INFO : val 划分验证模式为 FULL，正在验证和分析所有 160 张图像。
+2025-07-09 22:38:24,655 - utils.data_validation - INFO : 开始验证和分析 test 划分路径: /root/autodl-tmp/SafeYolo/yolo_server/data/test/images
+2025-07-09 22:38:24,656 - utils.data_validation - INFO : 图像目录 /root/autodl-tmp/SafeYolo/yolo_server/data/test/images 包含 160 张图像。
+2025-07-09 22:38:24,656 - utils.data_validation - INFO : test 划分验证模式为 FULL，正在验证和分析所有 160 张图像。
+2025-07-09 22:38:24,669 - utils.data_validation - INFO : SUMMARY: 数据集基本结构和标签内容验证通过！
+2025-07-09 22:38:24,669 - utils.data_validation - INFO : ====================================================================================================
+2025-07-09 22:38:24,669 - utils.data_validation - INFO :                             Dataset Class Distribution Analysis Results                             
+2025-07-09 22:38:24,669 - utils.data_validation - INFO : ====================================================================================================
+2025-07-09 22:38:24,669 - utils.data_validation - INFO : 
+-------------------- TRAIN 划分分析 --------------------
+2025-07-09 22:38:24,669 - utils.data_validation - INFO : 分析图像总数: 1280
+2025-07-09 22:38:24,669 - utils.data_validation - INFO : 总实例数: 4672
+2025-07-09 22:38:24,669 - utils.data_validation - INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------
+2025-07-09 22:38:24,669 - utils.data_validation - INFO : Class ID Class Name Total Instances   Instance %  Image Count      Image % Avg Inst/Img   Avg Bbox Area  StdDev Area Avg Aspect Ratio StdDev Aspect
+2025-07-09 22:38:24,669 - utils.data_validation - INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------
+2025-07-09 22:38:24,670 - utils.data_validation - INFO : 0        face                  2253        48.22          764        59.69         2.95          0.0191       0.0407            0.65         0.29
+2025-07-09 22:38:24,671 - utils.data_validation - INFO : 1        mask                  2419        51.78          566        44.22         4.27          0.0121       0.0307            0.49         0.18
+2025-07-09 22:38:24,671 - utils.data_validation - INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------
+2025-07-09 22:38:24,671 - utils.data_validation - INFO : 
+-------------------- VAL 划分分析 --------------------
+2025-07-09 22:38:24,671 - utils.data_validation - INFO : 分析图像总数: 160
+2025-07-09 22:38:24,672 - utils.data_validation - INFO : 总实例数: 525
+2025-07-09 22:38:24,672 - utils.data_validation - INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------
+2025-07-09 22:38:24,672 - utils.data_validation - INFO : Class ID Class Name Total Instances   Instance %  Image Count      Image % Avg Inst/Img   Avg Bbox Area  StdDev Area Avg Aspect Ratio StdDev Aspect
+2025-07-09 22:38:24,672 - utils.data_validation - INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------
+2025-07-09 22:38:24,672 - utils.data_validation - INFO : 0        face                   227        43.24           99        61.88         2.29          0.0205       0.0398            0.68         0.34
+2025-07-09 22:38:24,672 - utils.data_validation - INFO : 1        mask                   298        56.76           66        41.25         4.52          0.0109       0.0236            0.50         0.16
+2025-07-09 22:38:24,672 - utils.data_validation - INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------
+2025-07-09 22:38:24,672 - utils.data_validation - INFO : 
+-------------------- TEST 划分分析 --------------------
+2025-07-09 22:38:24,672 - utils.data_validation - INFO : 分析图像总数: 160
+2025-07-09 22:38:24,672 - utils.data_validation - INFO : 总实例数: 428
+2025-07-09 22:38:24,673 - utils.data_validation - INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------
+2025-07-09 22:38:24,673 - utils.data_validation - INFO : Class ID Class Name Total Instances   Instance %  Image Count      Image % Avg Inst/Img   Avg Bbox Area  StdDev Area Avg Aspect Ratio StdDev Aspect
+2025-07-09 22:38:24,673 - utils.data_validation - INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------
+2025-07-09 22:38:24,673 - utils.data_validation - INFO : 0        face                   167        39.02           89        55.62         1.88          0.0274       0.0487            0.72         0.33
+2025-07-09 22:38:24,673 - utils.data_validation - INFO : 1        mask                   261        60.98           75        46.88         3.48          0.0103       0.0179            0.48         0.15
+2025-07-09 22:38:24,673 - utils.data_validation - INFO : ---------------------------------------------------------------------------------------------------------------------------------------------------
+2025-07-09 22:38:24,673 - utils.data_validation - INFO : ====================================================================================================
+2025-07-09 22:38:24,673 - utils.data_validation - INFO :                                               数据集分析完成！                                              
+2025-07-09 22:38:24,673 - utils.data_validation - INFO : ====================================================================================================
+2025-07-09 22:38:24,673 - utils.data_validation - INFO : SUMMARY: 数据集验证与分析已完成！
+2025-07-09 22:38:24,674 - utils.data_validation - INFO : 性能报告: '数据集配置验证与分析' 平均耗时: 117.26 毫秒
+2025-07-09 22:38:24,674 - root - INFO : ========================基础数据集配置验证通过=========================
+2025-07-09 22:38:24,674 - root - INFO : ========================开始数据集分割唯一性验证========================
+2025-07-09 22:38:24,674 - utils.data_validation - INFO : 开始数据集划分唯一性验证（检查train, val, test之间是否存在重复图像）。
+2025-07-09 22:38:24,682 - utils.data_validation - INFO : 'train' 划分包含 1280 张唯一图像。
+2025-07-09 22:38:24,683 - utils.data_validation - INFO : 'val' 划分包含 160 张唯一图像。
+2025-07-09 22:38:24,684 - utils.data_validation - INFO : 'test' 划分包含 160 张唯一图像。
+2025-07-09 22:38:24,684 - utils.data_validation - INFO : train 和 val 之间未发现重复图像。
+2025-07-09 22:38:24,684 - utils.data_validation - INFO : train 和 test 之间未发现重复图像。
+2025-07-09 22:38:24,684 - utils.data_validation - INFO : val 和 test 之间未发现重复图像。
+2025-07-09 22:38:24,684 - utils.data_validation - INFO : SUMMARY: 数据集划分唯一性验证通过：各子集之间未发现重复图像。
+2025-07-09 22:38:24,685 - utils.data_validation - INFO : 性能报告: '数据集分割验证' 平均耗时: 10.67 毫秒
+2025-07-09 22:38:24,685 - root - INFO : ========================数据集分割唯一性验证通过========================
+2025-07-09 22:38:24,685 - root - INFO : ======================所有数据集验证均通过，恭喜！！！======================

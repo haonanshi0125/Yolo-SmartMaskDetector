@@ -1,0 +1,55 @@
+2025-07-09 22:29:15,054 - root - INFO : ====================日志记录器开始初始化====================
+2025-07-09 22:29:15,055 - root - INFO : 日志记录器最低记录级别: INFO
+2025-07-09 22:29:15,055 - root - INFO : ====================日志记录器初始化完成====================
+2025-07-09 22:29:15,055 - root - INFO : =====================开始初始化项目======================
+2025-07-09 22:29:15,055 - root - INFO : 项目的根路径为: /root/autodl-tmp/SafeYolo/yolo_server
+2025-07-09 22:29:15,056 - root - INFO : ==================开始检查并创建项目核心目录===================
+2025-07-09 22:29:15,056 - root - INFO : 已成功创建目录: configs
+2025-07-09 22:29:15,056 - root - INFO : 目录已存在: data
+2025-07-09 22:29:15,056 - root - INFO : 已成功创建目录: runs
+2025-07-09 22:29:15,057 - root - INFO : 目录已存在: models
+2025-07-09 22:29:15,057 - root - INFO : 目录已存在: models/pretrained
+2025-07-09 22:29:15,057 - root - INFO : 目录已存在: models/checkpoints
+2025-07-09 22:29:15,057 - root - INFO : 目录已存在: scripts
+2025-07-09 22:29:15,057 - root - INFO : 目录已存在: logs
+2025-07-09 22:29:15,057 - root - INFO : 目录已存在: data/raw
+2025-07-09 22:29:15,058 - root - INFO : 目录已存在: data/raw/images
+2025-07-09 22:29:15,058 - root - INFO : 目录已存在: data/raw/original_annotations
+2025-07-09 22:29:15,058 - root - INFO : 目录已存在: data/raw/yolo_staged_labels
+2025-07-09 22:29:15,059 - root - INFO : 已成功创建目录: data/train/images
+2025-07-09 22:29:15,059 - root - INFO : 已成功创建目录: data/train/labels
+2025-07-09 22:29:15,059 - root - INFO : 已成功创建目录: data/test/images
+2025-07-09 22:29:15,060 - root - INFO : 已成功创建目录: data/test/labels
+2025-07-09 22:29:15,060 - root - INFO : 已成功创建目录: data/val/images
+2025-07-09 22:29:15,060 - root - INFO : 已成功创建目录: data/val/labels
+2025-07-09 22:29:15,060 - root - INFO : ==================项目核心目录检查与创建完毕===================
+2025-07-09 22:29:15,060 - root - INFO : ===================开始检查原始数据集目录====================
+2025-07-09 22:29:15,062 - root - INFO : 原始图像文件目录已存在: data/raw/images 包含原始文件
+2025-07-09 22:29:15,063 - root - INFO : 原始标注文件目录已存在: data/raw/original_annotations 包含原始文件
+2025-07-09 22:29:15,063 - root - INFO : ====================项目初始化结果汇总=====================
+2025-07-09 22:29:15,063 - root - INFO : 新创建的目录有: 8 个，具体如下：
+2025-07-09 22:29:15,063 - root - INFO : - configs
+2025-07-09 22:29:15,063 - root - INFO : - runs
+2025-07-09 22:29:15,063 - root - INFO : - data/train/images
+2025-07-09 22:29:15,063 - root - INFO : - data/train/labels
+2025-07-09 22:29:15,063 - root - INFO : - data/test/images
+2025-07-09 22:29:15,063 - root - INFO : - data/test/labels
+2025-07-09 22:29:15,064 - root - INFO : - data/val/images
+2025-07-09 22:29:15,064 - root - INFO : - data/val/labels
+2025-07-09 22:29:15,064 - root - INFO : 已存在的目录有: 10 个，具体如下：
+2025-07-09 22:29:15,064 - root - INFO : - data
+2025-07-09 22:29:15,064 - root - INFO : - models
+2025-07-09 22:29:15,064 - root - INFO : - models/pretrained
+2025-07-09 22:29:15,064 - root - INFO : - models/checkpoints
+2025-07-09 22:29:15,064 - root - INFO : - scripts
+2025-07-09 22:29:15,064 - root - INFO : - logs
+2025-07-09 22:29:15,064 - root - INFO : - data/raw
+2025-07-09 22:29:15,064 - root - INFO : - data/raw/images
+2025-07-09 22:29:15,064 - root - INFO : - data/raw/original_annotations
+2025-07-09 22:29:15,065 - root - INFO : - data/raw/yolo_staged_labels
+2025-07-09 22:29:15,065 - root - INFO : 原始数据目录检查结果有: 2 个，具体如下：
+2025-07-09 22:29:15,065 - root - INFO : - data/raw/images (已存在，请勿重复创建)
+2025-07-09 22:29:15,065 - root - INFO : - data/raw/original_annotations (已存在，请勿重复创建)
+2025-07-09 22:29:15,065 - root - INFO : 请务必根据上述提示进行操作，特别是关于原始数据目录的检查结果
+2025-07-09 22:29:15,065 - root - INFO : =====================项目初始化完成======================
+2025-07-09 22:29:15,065 - root - INFO : 性能报告: 'init_project' 平均耗时: 9.67 毫秒

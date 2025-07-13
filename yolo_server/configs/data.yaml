@@ -1,0 +1,6 @@
+path: D:\PycharmProjects\SafeYolo\yolo_server\data
+train: D:\PycharmProjects\SafeYolo\yolo_server\data\train\images
+val: D:\PycharmProjects\SafeYolo\yolo_server\data\val\images
+test: D:\PycharmProjects\SafeYolo\yolo_server\data\test\images
+nc: 2
+names: [face, mask]
